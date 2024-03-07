@@ -1,0 +1,119 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --VerydarkblueCARD: hsl(216, 50%, 16%);
+    --VerydarkblueLINE: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "outfit", sans-serif;
+    color: var(--White);
+}
+
+body{
+    font-family: 'specimen';
+    background-color: var(--Verydarkblue);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    Font-size: (paragraph) 18px;
+    font-weight: 600;
+}
+
+.text{
+    padding: 0 20px 0 20px;
+}
+p{
+    margin-top: 20px;
+    color: var(--Softblue);
+}
+#sep{
+    height: 2px;
+    border-radius: 12px;
+    margin: 10px;
+    background-color: var(--VerydarkblueLINE);
+}
+.card {
+    background-color: var(--VerydarkblueCARD);
+    height: fit-content;
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden; /* Certifique-se de que o overflow esteja escondido para que a imagem não apareça fora do contêiner */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adicione sombra para efeito visual */
+}
+
+.img{
+    background-image: url(images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 410px;
+    height: 350px;
+    margin: 25px;
+    border-radius: 20px;
+    background-color: aqua;
+    position: relative;
+}
+
+.overlay{
+    background-image: url(images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--cyan);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ;
+}
+.overlay:hover{
+    opacity: 0.5;
+}
+
+
+
+.photo{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  
+}
+.photo img {
+    margin-right: 10px;
+    height: 70px;
+    border-radius: 100%;
+    border: 1px solid White;
+}
+.Creation{
+    padding: 0px 5px 0px 10px;
+    color: var(--VerydarkblueLINE);
+}
+
+.group{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+
+.eth{
+    color: var(--cyan);
+}
+
+
